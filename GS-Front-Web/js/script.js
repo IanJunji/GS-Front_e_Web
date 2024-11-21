@@ -10,10 +10,18 @@ document.querySelector('#login').addEventListener('click', function () {
     corpo.classList.add('blur');
 })
 
-function submitLogin() {
-    alert ('Login realizado!');
-    login_form.style.display = 'none';
-    corpo.classList.remove('blur');
-}
 
+function submitLogin(){
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (username !== "admin" && password !== "admin"){
+        alert("Usuário ou senha incorretos.");
+    }
+    else {
+        alert ('Login efetuado com sucesso!');
+        window.location.href = "index.html";
+        
+    }
+}
 
