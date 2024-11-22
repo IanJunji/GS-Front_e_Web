@@ -12,3 +12,19 @@
     transform: translate(-50%, -50%);
     z-index: 999;
 }
+
+
+#registerForm{
+    font-size: 4rem;
+    display: none;
+    background-color: #f1f1f1;
+    padding: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    width: 30dvw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
