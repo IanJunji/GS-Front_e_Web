@@ -458,9 +458,101 @@ section3 p{
 /* Fim da estilização dos componentes da Terceira Sessão */
 
 
+#userSatf{
+    font-size: 3rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin: 10rem 0 0 0;
+}
+
 /* Só exemplo pode apagar dps */
 #carousel {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 10rem 0;
+}
+#carousel button{
+    font-size: 5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 3rem;
+}
+#carousel #image-container img{
+    height: 30rem;
 }
 /* Só exemplo pode apagar dps */
+
+section4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    column-gap: 35rem;
+    margin-bottom: 3rem;
+}
+section4 h1{
+    font-size: 3rem;
+    color: white;
+}
+.vamosComecar{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 50%;
+    background-color: #0129f5;
+    padding: 4.7rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.baixeLume{
+    background-color: #0129f5;
+    padding: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+
+section5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    column-gap: 35rem;
+    margin-bottom: 3rem;
+}
+section5 .VCText{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section5 p, section5 a{
+    font-size: 2rem;
+
+}
+section5 p{
+    width: 53%;
+}
+section5 a{
+    margin: 3rem auto 1rem;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+    background-color: #33b7f7;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 4px 0 rgb(0, 0, 0, .25) ;
+}
+
+section5 .BLlinks{
+    width: 50%;
+}
