@@ -1,6 +1,4 @@
-# GS-Front_e_Web
- 
-# Nome do Projeto
+# Lume
 
 ## Resumo
 
