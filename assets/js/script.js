@@ -30,8 +30,8 @@ function submitRegister(){
             Usurário: ${userRegister}
             Email: ${email}
             Senha: ${passRegister}
-        `)
-        window.location.replace("assets/login.html");
+        `);
+        window.location.href = "assets/login.html"; 
     }
 }
 
