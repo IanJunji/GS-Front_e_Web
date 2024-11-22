@@ -542,7 +542,7 @@ section5 p, section5 a{
 section5 p{
     width: 53%;
 }
-section5 a{
+section5 .VCText a{
     margin: 3rem auto 1rem;
     text-decoration: none;
     color: white;
@@ -555,4 +555,13 @@ section5 a{
 
 section5 .BLlinks{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section5 .BLlinks img{
+    height: 5rem;
+    margin-bottom: 2rem;
 }
