@@ -17,15 +17,14 @@ function submitLogin(){
     }
     else {
         alert ('Login efetuado com sucesso!');
-        window.location.href = "login.html";
-        
+        window.location.href = "/GS-Front_e_Web/login.html";        
     }
 }
 
 const images = [
-    'images/carousel/feedback1.png',
-    'images/carousel/feedback2.png',
-    'images/carousel/feedback3.png'
+    'assets/images/carousel/feedback1.png',
+    'assets/images/carousel/feedback2.png',
+    'assets/images/carousel/feedback3.png'
 ];
 
 let Index = 0;
