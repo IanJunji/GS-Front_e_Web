@@ -1,4 +1,5 @@
 const login_form = document.querySelector('#loginForm');
+const register_form = document.querySelector('#registerForm')
 const corpo = document.querySelector('.corpo');
 
 
@@ -7,7 +8,7 @@ document.querySelector('#login').addEventListener('click', function () {
     corpo.classList.add('blur');
 })
 document.querySelector('#register').addEventListener('click', function () {
-    login_form.style.display = 'block';
+    register_form.style.display = 'block';
     corpo.classList.add('blur');
 })
 document.querySelector('#criarConta').addEventListener('click', function () {
