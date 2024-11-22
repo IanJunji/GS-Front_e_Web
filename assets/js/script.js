@@ -25,7 +25,7 @@ function submitLogin(){
     }
     else {
         alert ('Login efetuado com sucesso!');
-        window.location.href = "login.html";
+        window.location.href = "../login.html";
         
     }
 }
