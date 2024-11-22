@@ -17,6 +17,24 @@ document.querySelector('#criarConta').addEventListener('click', function () {
 })
 
 
+function submitRegister(){
+    const userRegister = document.getElementById('userRegister').value;
+    const email = document.getElementById('email').value;
+    const passRegister = document.getElementById('passRegister').value;
+
+    if (!userRegister || !email || !passRegister) {
+        alert('Preencha todos os campos!');
+    }
+    else{
+        alert(`Cadastro concluido!
+            Usurário: ${userRegister}
+            Email: ${email}
+            Senha: ${passRegister}
+        `);
+        window.location.href = "assets/login.html";
+    }
+}
+
 function submitLogin(){
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
