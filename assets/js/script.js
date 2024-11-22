@@ -25,7 +25,7 @@ function submitLogin(){
     }
     else {
         alert ('Login efetuado com sucesso!');
-        window.location.href = "/GS-Front_e_Web/assets/login.html";  
+        window.location.href = "assets/login.html";  
     }
 }
 
