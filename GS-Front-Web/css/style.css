@@ -4,13 +4,14 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
+    overflow-x: hidden;
 }
+
 
 .blur{
     filter: blur(5px);
     pointer-events: none;
 }
-
 
 /* Estilização do header */
 header{
@@ -21,7 +22,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100dvw;
+    max-width: 100dvw;
     height: 10dvh;
     background-color: white;
 }
@@ -71,6 +72,7 @@ nav a{
     text-decoration: none;
     color: black;
     padding: 5px 15px;
+    box-sizing: border-box;
 }
 .login #login{
     border: solid 1px black;
@@ -93,14 +95,14 @@ nav a{
 section1{
     display: flex;
     position: relative;
-    width: 100dvw;
+    max-width: 100dvw;
     height: 805.125px;
 }
 /* Fim da estilização da primeira sessao da pagina */
 /* Estilização dos componentes da primeira sessao */
     /* estilização do background */
 #background{
-    width: 100dvw;
+    width: 100vw;
     height: auto;
     position: absolute;
     top: 0;
@@ -135,8 +137,10 @@ section1{
     justify-self: center;
     align-self: flex-end;
     margin-bottom: 3%;
+    box-sizing: border-box;
 }
 .container1 p{
+    box-sizing: border-box;
     margin-top: 3%;
     grid-area: p1;
     font-size: 2.1rem;
@@ -158,11 +162,13 @@ section1{
     background-color: #2E2E2E;
     color: white;
     padding: 10px 5px;
+    box-sizing: border-box;
     border-radius: 1.3rem;
     box-shadow: 0 4px 4px 0 rgb(0, 0, 0, .25);
 
 }
 .container1 img{
+    box-sizing: border-box;
     grid-area: foto1;
     justify-self: flex-start;
     margin-left: 10%;
@@ -174,18 +180,151 @@ section1{
 
 
 
+
+
+
+
+
+
 /* Estilização da Segunda sessão */
+section2{
+    position: relative;
+    max-width: 100dvw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* Fim da Estilização da Segunda sessão */
+/* Estilização dos elementos da Segunda sessão */
+.container2{
+    width: 100dvw;
+    height: 100%;
+    grid-area: cont2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 15%;
+    align-items: center;
+}
+.container2 .box{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container2 .box img{
+    box-sizing: border-box;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+.container2 .box p{
+    box-sizing: border-box;
+    width: 78%;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+
+.container3 h1, .container4 h1, .container5 h1{
+    font-size: 3rem;
+}
+.container3 p, .container4 p, .container5 p{
+    font-size: 2rem;
+}
+.container3{
+    height: 50dvh;
+    display: flex;
+    flex-direction: row;
+    grid-area: cont3;
+}
+.container3 .texto1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 14.3%;
+    box-sizing: border-box;
+}
+.container3 .texto1 h1{
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+.container3 .mao_cel{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container3 .mao_cel img{
+    height: 70%;
+}
+
+
+.container4{
+    height: 50dvh;
+    display: flex;
+    flex-direction: row;
+    grid-area: cont4;
+}
+.container4 .chicoin{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-end;
+}
+.container4 .chicoin img{
+    height: 40%;
+}
+.container4 .texto2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin: 0 14.3%;
+    box-sizing: border-box;
+}
+.container4 .texto2 h1{
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.container5{
+    display: flex;
+    grid-area: cont5;
+    height: 10dvh;
+}
+.container5 img{
+    width: 100dvw;
+    height: auto;
+}
+
+/* FIm da Estilização dos elementos da Segunda sessão */
+
+
+
+
+
+
+
+
+
+/* Estilização da Terceira sessão */
 section3{
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 1fr) 1fr;
-    grid-template-areas: 
-    "cont6 cont6"
-    "celCoin cont7"
-    "cont8 mFeliz"
-    "mRaiva cont9"
-    "final final";
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
 }
 section3 h1{
     font-size: 3rem;
@@ -197,16 +336,126 @@ section3 h2{
 section3 p{
     font-size: 2rem;
 }
-/* Fim da estilização da Segunda sessão */
+/* Fim da estilização da Terceira sessão */
 
-/* Estilização dos componentes da Segunda Sessão */
-#flower_coin{
+/* Estilização dos componentes da Terceira Sessão */
+.container6{
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    width: 100dvw;
+    height: 400px;
+}
+.container6 #flower_coin{
     top: 0;
-    width: 60dvw;
+    height: 350px;
     position: absolute;
     z-index: 2;
 }
-/* Fim da estilização dos componentes da Segunda Sessão */
+.container6 .box1{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 200px;
+}
+.container6 .box1 h1{
+    margin-bottom: 50px;
+}
+.container6 .box1 h2{
+    margin-bottom: 20px;
+}
+
+
+
+
+.container7{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100dvw;
+}
+.tamanho_imagem{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.container7 img{
+    width: 50%;
+}
+.container7 .box2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding: 0 200px;
+}
+.container7 .box2 h1{
+    margin-bottom: 50px;
+}
+.container7 .box2 h2{
+    margin-bottom: 20px;
+}
+
+.container8{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100dvw;
+}
+.tamanho_imagem{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.container8 img{
+    width: 40%;
+}
+.container8 .box3{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding: 0 200px;
+}
+.container8 .box3 h1{
+    margin-bottom: 50px;
+}
+.container8 .box3 h2{
+    margin-bottom: 20px;
+}
+
+.container9{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100dvw;
+}
+.tamanho_imagem{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.container9 img{
+    width: 20%;
+}
+.container9 .box4{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    padding: 0 200px;
+}
+.container9 .box4 h1{
+    margin-bottom: 50px;
+}
+.container9 .box4 h2{
+    margin-bottom: 20px;
+}
+/* Fim da estilização dos componentes da Terceira Sessão */
 
 
 /* Só exemplo pode apagar dps */
