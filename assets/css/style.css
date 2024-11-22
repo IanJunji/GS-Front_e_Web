@@ -565,3 +565,66 @@ section5 .BLlinks img{
     height: 5rem;
     margin-bottom: 2rem;
 }
+
+footer .links-e-redes{
+    background-color: #ededed;
+}
+
+footer{
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+}
+
+footer .baixeNossoApp{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .baixeNossoApp h2{
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+footer .aplicativos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 3rem 0;
+}
+
+footer .aplicativos img{
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+footer .redes_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    gap: 2rem;
+}
+
+footer .redes_links img{
+    height: 3rem;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdcdc;
+}
+
+footer .copyright p{
+    font-size: 1.6rem;
+    color: #5A5A5A;
+    margin: 2rem 0;
+}
