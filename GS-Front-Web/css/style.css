@@ -208,3 +208,10 @@ section3 p{
 }
 /* Fim da estilização dos componentes da Segunda Sessão */
 
+
+/* Só exemplo pode apagar dps */
+#carousel {
+    display: flex;
+    align-items: center;
+}
+/* Só exemplo pode apagar dps */
