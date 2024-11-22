@@ -10,7 +10,10 @@ document.querySelector('#register').addEventListener('click', function () {
     login_form.style.display = 'block';
     corpo.classList.add('blur');
 })
-
+document.querySelector('#criarConta').addEventListener('click', function () {
+    login_form.style.display = 'block';
+    corpo.classList.add('blur');
+})
 
 
 function submitLogin(){
